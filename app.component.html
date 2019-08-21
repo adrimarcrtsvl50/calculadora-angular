@@ -1,0 +1,54 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <h2>{{var1 + var2}}</h2>
+  <hr>
+  <button [disabled]="deshabilitado" (click)="ejecutar()">clic aqui</button>
+  <hr/>
+  <input type="text" placeholder="Nombre" [(ngModel)]="Nombre"/>
+  <br/> 
+  Nombre:{{Nombre}}
+
+<h1> 
+   Calculadora 
+  </h1>
+  <hr>
+  <input type="number" placeholder="Ingrese numero" [(ngModel)]="num1">
+  <input type="number" placeholder="Ingrese numero" [(ngModel)]="num2">
+  <p>El resultado es {{rta}}</p>
+  <br>
+  <button (click)="operacion(num1,num2,'suma')">SUMAR</button>
+  <br>
+  <button (click)="operacion(num1,num2,'resta')">RESTAR</button>
+  <br>
+  <button (click)="operacion(num1,num2,'multiplicacion')">MULTIPLICAR</button>
+  <br>
+  <button (click)="operacion(num1,num2,'dividir')">DIVIDIR</button>
+  <br>
+  <button (click)="operacion(num1,num2,'modulo')">MODULO</button>
+  <br>
+  <button (click)="reset()">LIMPIAR</button>
+
+  <h1> Calculadora </h1>  
+    <input type="number" class="form-control" placeholder="Ingrese Valor 1" id="val1" [(ngModel)]="val1">
+<input type="number" class="form-control" placeholder="Ingrese Valor 2" id="val2" [(ngModel)]="val2"> 
+
+<br>
+<button class="btn btn-primary" (click)="Operacion()"> Hacer operacion </button>
+  <br>
+El Resultado de la suma es ={{sum}}
+<br>
+ <br>
+El Resultado de la resta es ={{res}}
+<br>
+ <br>
+El Resultado de la multiplicacion es ={{mult}}
+<br>
+ <br>
+El Resultado de la division es ={{div}}
+<br>
+</div>  
+
+

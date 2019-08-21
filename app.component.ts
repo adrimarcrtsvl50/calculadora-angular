@@ -68,13 +68,26 @@ sum:number;
 res:number;
 mult:number;
 div:number;
+mod:number;
 
 Operacion(){
 this.sum=this.val1+this.val2;
 this.res=this.val1-this.val2;
 this.mult=this.val1*this.val2;
 this.div=this.val1/this.val2;
+this.mod= this.val1%this.val2;
   
+  }
+clear()
+  {
+    this.val1 = null;
+    this.val2 = null;
+    this.sum = null;
+    this.res = null;
+    this.mult = null;
+    this.div = null;
+    this.mod = null;
+
   }
 }
 
